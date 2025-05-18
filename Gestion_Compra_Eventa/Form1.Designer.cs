@@ -14,7 +14,7 @@ namespace Gestion_Compra_Eventa
 		private Button btnVentaHuevos;
 		private Button btnVentaGallinas;
 		private Button btnCompraVitaminas;
-		private Button btnOtros;
+		private Button btnCompraOtros;
 
 		private void InitializeComponent()
 		{
@@ -24,7 +24,7 @@ namespace Gestion_Compra_Eventa
 			btnCompraVacunas = new Button();
 			btnCompraHuevos = new Button();
 			groupBoxVentas = new GroupBox();
-			btnOtros = new Button();
+			btnCompraOtros = new Button();
 			btnVentaHuevos = new Button();
 			btnVentaGallinas = new Button();
 			groupBoxCompras.SuspendLayout();
@@ -44,17 +44,6 @@ namespace Gestion_Compra_Eventa
 			groupBoxCompras.TabIndex = 0;
 			groupBoxCompras.TabStop = false;
 			groupBoxCompras.Text = "Compras";
-
-			// btnCompraVitaminas
-			btnCompraVitaminas.BackColor = Color.FromArgb(128, 0, 32);
-			btnCompraVitaminas.ForeColor = Color.FromArgb(192, 255, 192);
-			btnCompraVitaminas.Location = new Point(20, 130);
-			btnCompraVitaminas.Name = "btnCompraVitaminas";
-			btnCompraVitaminas.Size = new Size(250, 40);
-			btnCompraVitaminas.TabIndex = 3;
-			btnCompraVitaminas.Text = "Compra de Vitaminas";
-			btnCompraVitaminas.UseVisualStyleBackColor = false;
-			btnCompraVitaminas.Click += btnCompraVitaminas_Click;
 
 			// btnCompraConcentrado
 			btnCompraConcentrado.BackColor = Color.FromArgb(128, 0, 32);
@@ -78,20 +67,31 @@ namespace Gestion_Compra_Eventa
 			btnCompraVacunas.UseVisualStyleBackColor = false;
 			btnCompraVacunas.Click += btnCompraVacunas_Click;
 
+			// btnCompraVitaminas
+			btnCompraVitaminas.BackColor = Color.FromArgb(128, 0, 32);
+			btnCompraVitaminas.ForeColor = Color.FromArgb(192, 255, 192);
+			btnCompraVitaminas.Location = new Point(20, 130);
+			btnCompraVitaminas.Name = "btnCompraVitaminas";
+			btnCompraVitaminas.Size = new Size(250, 40);
+			btnCompraVitaminas.TabIndex = 2;
+			btnCompraVitaminas.Text = "Compra de Vitaminas";
+			btnCompraVitaminas.UseVisualStyleBackColor = false;
+			btnCompraVitaminas.Click += btnCompraVitaminas_Click;
+
 			// btnCompraHuevos
 			btnCompraHuevos.BackColor = Color.FromArgb(128, 0, 32);
 			btnCompraHuevos.ForeColor = Color.FromArgb(192, 255, 192);
-			btnCompraHuevos.Location = new Point(20, 176);
+			btnCompraHuevos.Location = new Point(20, 180);
 			btnCompraHuevos.Name = "btnCompraHuevos";
 			btnCompraHuevos.Size = new Size(250, 40);
-			btnCompraHuevos.TabIndex = 2;
+			btnCompraHuevos.TabIndex = 3;
 			btnCompraHuevos.Text = "Compra de Huevos";
 			btnCompraHuevos.UseVisualStyleBackColor = false;
-			btnCompraHuevos.Click += btnCompraHuevos_Click_1;
+			btnCompraHuevos.Click += btnCompraHuevos_Click;
 
 			// groupBoxVentas
 			groupBoxVentas.BackColor = Color.FromArgb(185, 178, 154);
-			groupBoxVentas.Controls.Add(btnOtros);
+			groupBoxVentas.Controls.Add(btnCompraOtros);
 			groupBoxVentas.Controls.Add(btnVentaHuevos);
 			groupBoxVentas.Controls.Add(btnVentaGallinas);
 			groupBoxVentas.Location = new Point(402, 32);
@@ -100,17 +100,6 @@ namespace Gestion_Compra_Eventa
 			groupBoxVentas.TabIndex = 1;
 			groupBoxVentas.TabStop = false;
 			groupBoxVentas.Text = "Ventas";
-
-			// btnOtros
-			btnOtros.BackColor = Color.FromArgb(128, 0, 32);
-			btnOtros.ForeColor = Color.FromArgb(192, 255, 192);
-			btnOtros.Location = new Point(20, 176);
-			btnOtros.Name = "btnOtros";
-			btnOtros.Size = new Size(250, 40);
-			btnOtros.TabIndex = 2;
-			btnOtros.Text = "Otros";
-			btnOtros.UseVisualStyleBackColor = false;
-			btnOtros.Click += btnOtros_Click;
 
 			// btnVentaHuevos
 			btnVentaHuevos.BackColor = Color.FromArgb(128, 0, 32);
@@ -133,6 +122,17 @@ namespace Gestion_Compra_Eventa
 			btnVentaGallinas.Text = "Venta de Gallinas";
 			btnVentaGallinas.UseVisualStyleBackColor = false;
 			btnVentaGallinas.Click += btnVentaGallinas_Click;
+
+			// btnCompraOtros
+			btnCompraOtros.BackColor = Color.FromArgb(128, 0, 32);
+			btnCompraOtros.ForeColor = Color.FromArgb(192, 255, 192);
+			btnCompraOtros.Location = new Point(20, 180);
+			btnCompraOtros.Name = "btnCompraOtros";
+			btnCompraOtros.Size = new Size(250, 40);
+			btnCompraOtros.TabIndex = 2;
+			btnCompraOtros.Text = "Otros";
+			btnCompraOtros.UseVisualStyleBackColor = false;
+			btnCompraOtros.Click += btnCompraOtros_Click;
 
 			// FormMenuPrincipal
 			BackColor = Color.FromArgb(216, 208, 200);
